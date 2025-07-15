@@ -3,46 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Invest - Saverite</title>
+    <title>Saverite - Smart Savings & Investment Platform</title>
     <link rel="stylesheet" href="style.css">
     <!-- Bootstrap CSS -->
-
     <link href="dist/css/bootstrap.min.css" rel="stylesheet">
-    <script src="dist/js/bootstrap.min.js"></script>    <!-- Font Awesome -->
+    <script src="dist/js/bootstrap.min.js"></script>
+    <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
-        .hero-section {
-            background-color: #f8f9fa;
-            padding: 5rem 0;
-        }
-        .plan-card {
-            border-radius: 10px;
-            transition: transform 0.3s;
-        }
-        .plan-card:hover {
-            transform: translateY(-5px);
-        }
-        .plan-header {
-            border-top-left-radius: 10px;
-            border-top-right-radius: 10px;
-            padding: 1.5rem;
-            color: white;
-        }
-        .feature-icon {
-            color: #0d6efd;
-            margin-right: 0.5rem;
-        }
+      body {
+        background-color: #f8f9fa;
+      }
+      .section-title {
+        font-size: 2rem;
+        font-weight: 600;
+        margin-bottom: 20px;
+      }
+      .product-card {
+        background: #fff;
+        border-radius: 12px;
+        padding: 25px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+        margin-bottom: 30px;
+      }
+      .product-title {
+        font-size: 1.3rem;
+        font-weight: 600;
+        margin-bottom: 10px;
+      }
+      .highlight {
+        background-color: #e9f7ef;
+        border-left: 4px solid #28a745;
+        padding: 10px 15px;
+        margin-top: 15px;
+        font-style: italic;
+      }
     </style>
-</head>
+
+  </head>
 <body>
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
         <div class="container">
             <a class="navbar-brand" href="index.html">
-                                <img src="images/logo.jpg" alt="Saverite Logo" style="height: 100px; width: 200px;">
-
+                <img src="images/logo.jpg" alt="Saverite Logo" style="height: 100px; width: 200px;">
             </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"           style="border: none; box-shadow: none; outline: none; background: transparent;"
+            >
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
@@ -52,6 +59,9 @@
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="about.html">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="invest.html">Investment</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="contact.html">Contact</a>
@@ -64,178 +74,123 @@
         </div>
     </nav>
 
-    <!-- Hero Section -->
-    <section class="hero-section">
-        <div class="container text-center">
-            <h1 class="display-4 fw-bold mb-3">Investment Opportunities</h1>
-            <p class="lead">Grow your money with our flexible investment plans</p>
-        </div>
-    </section>
+    <div class="container">
+      
+      <h1 class="section-title text-center">Saverite Savings Products</h1>
+  <p class="mb-4 text-center">
+    Designed to help you save smarter, earn better, and stay ready for emergencies. Choose the plan that fits your lifestyle and goals.
+  </p>
 
-    <!-- Investment Plans -->
-    <section class="py-5">
-        <div class="container">
-            <div class="text-center mb-5">
-                <h2 class="fw-bold">Our Investment Plans</h2>
-                <p class="text-muted">Choose the plan that works best for your financial goals</p>
-            </div>
-            <div class="row g-4">
-                <div class="col-md-4">
-                    <div class="card plan-card h-100 shadow-sm">
-                        <div class="plan-header bg-primary">
-                            <h4 class="text-center mb-0">Basic Plan</h4>
-                        </div>
-                        <div class="card-body text-center">
-                            <h3 class="my-3">10% ROI</h3>
-                            <p class="text-muted">Per Annum</p>
-                            <ul class="list-unstyled text-start mb-4">
-                                <li class="mb-2"><i class="fas fa-check feature-icon"></i> Minimum: ₦10,000</li>
-                                <li class="mb-2"><i class="fas fa-check feature-icon"></i> Maximum: ₦500,000</li>
-                                <li class="mb-2"><i class="fas fa-check feature-icon"></i> Duration: 3-6 months</li>
-                                <li class="mb-2"><i class="fas fa-check feature-icon"></i> Monthly interest payments</li>
-                                <li><i class="fas fa-check feature-icon"></i> Principal returned at maturity</li>
-                            </ul>
-                            <a href="#" class="btn btn-outline-primary">Get Started</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card plan-card h-100 shadow-sm">
-                        <div class="plan-header bg-success">
-                            <h4 class="text-center mb-0">Premium Plan</h4>
-                        </div>
-                        <div class="card-body text-center">
-                            <h3 class="my-3">12% ROI</h3>
-                            <p class="text-muted">Per Annum</p>
-                            <ul class="list-unstyled text-start mb-4">
-                                <li class="mb-2"><i class="fas fa-check feature-icon"></i> Minimum: ₦100,000</li>
-                                <li class="mb-2"><i class="fas fa-check feature-icon"></i> Maximum: ₦2,000,000</li>
-                                <li class="mb-2"><i class="fas fa-check feature-icon"></i> Duration: 6-12 months</li>
-                                <li class="mb-2"><i class="fas fa-check feature-icon"></i> Quarterly interest payments</li>
-                                <li><i class="fas fa-check feature-icon"></i> Principal returned at maturity</li>
-                            </ul>
-                            <a href="#" class="btn btn-outline-success">Get Started</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card plan-card h-100 shadow-sm">
-                        <div class="plan-header bg-warning text-dark">
-                            <h4 class="text-center mb-0">Elite Plan</h4>
-                        </div>
-                        <div class="card-body text-center">
-                            <h3 class="my-3">15% ROI</h3>
-                            <p class="text-muted">Per Annum</p>
-                            <ul class="list-unstyled text-start mb-4">
-                                <li class="mb-2"><i class="fas fa-check feature-icon"></i> Minimum: ₦500,000</li>
-                                <li class="mb-2"><i class="fas fa-check feature-icon"></i> Maximum: ₦10,000,000</li>
-                                <li class="mb-2"><i class="fas fa-check feature-icon"></i> Duration: 12-24 months</li>
-                                <li class="mb-2"><i class="fas fa-check feature-icon"></i> Bi-annual interest payments</li>
-                                <li><i class="fas fa-check feature-icon"></i> Principal returned at maturity</li>
-                            </ul>
-                            <a href="#" class="btn btn-outline-warning">Get Started</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+  <!-- 30 Days Circle -->
+  <div class="product-card">
+    <div class="product-title">30 Days Circle</div>
+    <ul>
+      <li>Save as little as <strong>₦1,000</strong> daily over 30 days</li>
+      <li>Maximum daily savings: <strong>₦2,499</strong></li>
+      <li><strong>Commission:</strong> One day's contribution is taken as Saverite's fee</li>
+    </ul>
+    <div class="highlight">Perfect for short-term budgeting and disciplined savers.</div>
+  </div>
 
-    <!-- How We Invest -->
-    <section class="py-5 bg-light">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-lg-6 mb-4 mb-lg-0">
-                    <h2 class="fw-bold mb-4">How We Invest Your Money</h2>
-                    <p>At Saverite, we carefully invest your funds in a diversified portfolio of low-risk, high-yield opportunities to generate the returns we promise.</p>
-                    <p>Our investment strategies focus on:</p>
-                    <ul class="list-unstyled">
-                        <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i> Government bonds and treasury bills</li>
-                        <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i> Blue-chip corporate debt instruments</li>
-                        <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i> Carefully selected real estate projects</li>
-                        <li><i class="fas fa-check-circle text-success me-2"></i> Other secured investment opportunities</li>
-                    </ul>
-                    <p>We prioritize capital preservation while seeking optimal returns for our investors.</p>
-                </div>
-                <div class="col-lg-6">
-                    <img src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1200&q=80" 
-                    alt="Investment strategy meeting with charts" 
-                    class="img-fluid rounded">
-                                </div>
-            </div>
-        </div>
-    </section>
+  <!-- 150 Days Circle -->
+  <div class="product-card">
+    <div class="product-title">150 Days Circle</div>
+    <ul>
+      <li>Save <strong>daily, weekly, or monthly</strong></li>
+      <li><strong>Lock period:</strong> 90 days</li>
+      <li><strong>Interest:</strong> 20% per annum</li>
+      <li><strong>Interest calculated daily</strong></li>
+    </ul>
+    <div class="highlight">Ideal for mid-term goals like gadgets, education, or travel.</div>
+  </div>
 
-    <!-- Investment Calculator -->
-    <section class="py-5">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-lg-8">
-                    <div class="card shadow-sm">
-                        <div class="card-body p-4">
-                            <h2 class="fw-bold text-center mb-4">Investment Calculator</h2>
-                            <form>
-                                <div class="mb-3">
-                                    <label for="investmentAmount" class="form-label">Investment Amount (₦)</label>
-                                    <input type="range" class="form-range" min="10000" max="10000000" step="1000" id="investmentAmount" value="500000">
-                                    <div class="d-flex justify-content-between">
-                                        <span>₦10,000</span>
-                                        <span id="amountValue">₦500,000</span>
-                                        <span>₦10,000,000</span>
-                                    </div>
-                                </div>
-                                <div class="mb-3">
-                                    <label for="investmentPlan" class="form-label">Investment Plan</label>
-                                    <select class="form-select" id="investmentPlan">
-                                        <option value="10">Basic Plan (10%)</option>
-                                        <option value="12">Premium Plan (12%)</option>
-                                        <option value="15">Elite Plan (15%)</option>
-                                    </select>
-                                </div>
-                                <div class="mb-3">
-                                    <label for="investmentDuration" class="form-label">Duration (months)</label>
-                                    <select class="form-select" id="investmentDuration">
-                                        <option value="3">3 months</option>
-                                        <option value="6">6 months</option>
-                                        <option value="12">12 months</option>
-                                        <option value="24">24 months</option>
-                                    </select>
-                                </div>
-                                <div class="text-center mt-4">
-                                    <button type="button" class="btn btn-primary" id="calculateBtn">Calculate Returns</button>
-                                </div>
-                            </form>
-                            <div class="mt-4 p-3 bg-light rounded d-none" id="resultsContainer">
-                                <h5 class="text-center">Projected Returns</h5>
-                                <div class="row mt-3">
-                                    <div class="col-md-6">
-                                        <p class="mb-1">Total Interest:</p>
-                                        <h4 id="totalInterest">₦0</h4>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <p class="mb-1">Total Return:</p>
-                                        <h4 id="totalReturn">₦0</h4>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+  <!-- 210 Days Circle -->
+  <div class="product-card">
+    <div class="product-title">210 Days Circle</div>
+    <ul>
+      <li>Save <strong>daily, weekly, or monthly</strong></li>
+      <li><strong>Lock period:</strong> 180 days</li>
+      <li><strong>Interest:</strong> 20% per annum</li>
+      <li><strong>Interest calculated daily</strong></li>
+    </ul>
+    <div class="highlight">Great for long-term planning like school fees or business capital.</div>
+  </div>
 
-    <!-- CTA Section -->
-    <section class="py-5 bg-primary text-white">
-        <div class="container text-center">
-            <h2 class="fw-bold mb-4">Ready to Start Investing?</h2>
-            <p class="lead mb-5">Join Saverite today and begin your journey to financial growth</p>
-            <div class="d-flex justify-content-center flex-wrap">
-                <a href="#" class="btn btn-light btn-lg me-3 mb-3">Download App</a>
-                <a href="contact.html" class="btn btn-outline-light btn-lg mb-3">Contact Us</a>
-            </div>
-        </div>
-    </section>
+  <!-- Emergency Funds -->
+  <div class="product-card">
+    <div class="product-title">Emergency Funds</div>
+    <ul>
+      <li>Access funds without liquidating your savings</li>
+      <li>Quick disbursement for urgent needs</li>
+      <li>Based on your savings history</li>
+    </ul>
+    <div class="highlight">Stay prepared for life’s surprises — from health to hustle.</div>
+  </div>
+
+  <!-- Rewards & Referrals -->
+  <div class="product-card">
+    <div class="product-title"> Rewards & Referrals</div>
+    <ul>
+      <li><strong>Refer & Earn:</strong> Get rewarded each time someone signs up and saves using your referral code</li>
+      <li>Bonuses paid directly into your wallet</li>
+    </ul>
+    <div class="highlight">Turn your network into income. Start referring today!</div>
+  </div>
+    
+  <h2 class="mt-5 mb-3 text-center">Summary Comparison Table</h2>
+<div class="table-responsive pb-5">
+  <table class="table table-bordered text-center">
+    <thead class="table-primary">
+      <tr>
+        <th>Plan</th>
+        <th>Duration</th>
+        <th>Interest</th>
+        <th>Commission / Penalty</th>
+        <th>Ideal For</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>30 Days Circle</td>
+        <td>30 Days</td>
+        <td>None (Daily Contribution)</td>
+        <td>1 Day’s contribution as commission</td>
+        <td>Short-term savings, salary earners</td>
+      </tr>
+      <tr>
+        <td>150 Days Circle</td>
+        <td>5 Months</td>
+        <td>20% p.a. (Daily accrual)</td>
+        <td>90-day lock-in</td>
+        <td>Mid-term goals (education, gadgets)</td>
+      </tr>
+      <tr>
+        <td>210 Days Circle</td>
+        <td>7 Months</td>
+        <td>20% p.a. (Daily accrual)</td>
+        <td>180-day lock-in</td>
+        <td>Long-term goals (business, rent)</td>
+      </tr>
+      <tr>
+        <td>Emergency Funds</td>
+        <td>30–60 Days</td>
+        <td>Based on loan amount (7–10%)</td>
+        <td>3% weekly for late repayment</td>
+        <td>Unexpected expenses or emergencies</td>
+      </tr>
+      <tr>
+        <td>Refer & Earn</td>
+        <td>Ongoing</td>
+        <td>Bonus per referral</td>
+        <td>None</td>
+        <td>Earn from sharing Saverite</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+  
+    </div>
 
     <!-- Footer -->
     <footer>
@@ -256,20 +211,19 @@
                 <div class="col-lg-2 col-md-6 mb-4 mb-md-0">
                     <h5 class="text-white mb-4">Quick Links</h5>
                     <ul class="list-unstyled">
-                        <li class="mb-2"><a href="index.html" class="text-white text-decoration-none">Home</a></li>
-                        <li class="mb-2"><a href="about.html" class="text-white text-decoration-none">About Us</a></li>
-                        <li class="mb-2"><a href="invest.html" class="text-white text-decoration-none">Invest</a></li>
-                        <li class="mb-2"><a href="faqs.html" class="text-white text-decoration-none">FAQs</a></li>
-                        <li><a href="contact.html" class="text-white text-decoration-none">Contact</a></li>
-                    </ul>
+                      <li class="mb-2"><a href="index.html" class="text-white text-decoration-none">Home</a></li>
+                      <li class="mb-2"><a href="about.html" class="text-white text-decoration-none">About Us</a></li>
+                      <li class="mb-2"><a href="invest.html" class="text-white text-decoration-none">Investment</a></li>
+                      <li><a href="contact.html" class="text-white text-decoration-none">Contact</a></li>
+                  </ul>
                 </div>
                 <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
                     <h5 class="text-white mb-4">Contact Us</h5>
                     <ul class="list-unstyled">
-                        <li class="mb-2"><i class="fas fa-map-marker-alt me-2"></i> House 4 Road 3 Unilag Estate Idimu</li>
-                        <li class="mb-2"><i class="fas fa-envelope me-2"></i> enquiries@saveriteapp.com</li>
-                        <li><i class="fas fa-phone me-2"></i> +234 904 000 2222</li>
-                    </ul>
+                      <li class="mb-2"><i class="fas fa-map-marker-alt me-2"></i> House 4, Road 3 Unilag Estate Idimu, Lagos</li>
+                      <li class="mb-2"><i class="fas fa-envelope me-2"></i> enquiries@saveriteapp.com.ng</li>
+                      <li><i class="fas fa-phone me-2"></i> +234 904 000 2222</li>
+                  </ul>
                 </div>
                 <div class="col-lg-3 col-md-6">
                     <h5 class="text-white mb-4">Download App</h5>
@@ -292,53 +246,7 @@
         </div>
     </footer>
 
-
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script>
-        // Investment Calculator Functionality
-        document.addEventListener('DOMContentLoaded', function() {
-            const amountSlider = document.getElementById('investmentAmount');
-            const amountValue = document.getElementById('amountValue');
-            const calculateBtn = document.getElementById('calculateBtn');
-            const resultsContainer = document.getElementById('resultsContainer');
-            const totalInterest = document.getElementById('totalInterest');
-            const totalReturn = document.getElementById('totalReturn');
-            
-            // Update amount display when slider changes
-            amountSlider.addEventListener('input', function() {
-                const value = parseInt(this.value).toLocaleString('en-NG', {
-                    style: 'currency',
-                    currency: 'NGN',
-                    minimumFractionDigits: 0
-                });
-                amountValue.textContent = value;
-            });
-            
-            // Calculate returns when button is clicked
-            calculateBtn.addEventListener('click', function() {
-                const amount = parseInt(amountSlider.value);
-                const rate = parseFloat(document.getElementById('investmentPlan').value) / 100;
-                const duration = parseInt(document.getElementById('investmentDuration').value) / 12;
-                
-                const interest = amount * rate * duration;
-                const returnTotal = amount + interest;
-                
-                totalInterest.textContent = interest.toLocaleString('en-NG', {
-                    style: 'currency',
-                    currency: 'NGN',
-                    minimumFractionDigits: 0
-                });
-                
-                totalReturn.textContent = returnTotal.toLocaleString('en-NG', {
-                    style: 'currency',
-                    currency: 'NGN',
-                    minimumFractionDigits: 0
-                });
-                
-                resultsContainer.classList.remove('d-none');
-            });
-        });
-    </script>
 </body>
 </html>
